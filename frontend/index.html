@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Server Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cloud Server Monitoring</h1>
+        <p>Real-time server health dashboard</p>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="card">
+            <h2>Hostname</h2>
+            <p id="hostname">Loading...</p>
+        </section>
+
+        <section class="card">
+            <h2>Server Uptime</h2>
+            <p id="uptime">Loading...</p>
+        </section>
+        <section class="card">
+            <h2>Monitoring Alerts</h2>
+            <p id="alerts">No alerts</p>
+        </section>
+        <section class="card">
+            <h2>CPU Usage</h2>
+            <p id="cpu">Loading...</p>
+            <div class="progress-container">
+                <div id="cpu-bar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Memory Usage</h2>
+            <p id="memory">Loading...</p>
+            <div class="progress-container">
+                <div id="memory-bar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Disk Usage</h2>
+            <p id="disk">Loading...</p>
+            <div class="progress-container">
+                <div id="disk-bar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Server Status</h2>
+            <p id="status">Loading...</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="last-updated">Waiting for server data...</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

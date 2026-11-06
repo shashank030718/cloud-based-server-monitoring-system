@@ -1,0 +1,14 @@
+services:
+  backend:
+    build: .
+    container_name: cloud-monitoring-backend
+    ports:
+      - "8002:8000"
+
+  frontend:
+    build: ./frontend
+    container_name: cloud-monitoring-frontend
+    ports:
+      - "5501:80"
+    depends_on:
+      - backend
